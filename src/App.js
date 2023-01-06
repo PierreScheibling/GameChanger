@@ -3,10 +3,7 @@ import React from "react";
 import Home from "./pages/Home";
 import Nav from "./components/Nav";
 //Styles
-import styled from "styled-components";
-import { motion } from "framer-motion";
 import GlobalStyles from "./components/GlobalStyles";
-import background from "./img/background.svg"
 //Routes
 import { Route, Routes } from "react-router-dom";
 

@@ -64,11 +64,6 @@ const GameDetail = ({ pathId }) => {
     }
   };
 
-  const picture = {
-    hidden: { scale: 1.1 },
-    show: { scale: 1, transition: { duration: 1, ease: "easeOut", delay: 1 } },
-  };
-
   //Data
   const { screen, game, isLoading } = useSelector((state) => state.detail);
   return (
