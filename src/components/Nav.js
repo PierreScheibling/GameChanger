@@ -50,21 +50,20 @@ const StyledNav = styled(motion.nav)`
     margin-top: clamp(0.2rem, 1vw, 1rem);
     font-size: clamp(0.5rem, 1.5vw, 6rem);
     padding: clamp(0.5rem, 0.5vw, 1rem);
-    border: none;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
+    border: solid 0.5px grey;
   }
   button {
     font-size: clamp(0.5rem, 1.5vw, 6rem);
-    border: none;
     padding: clamp(0.5rem, 0.5vw, 1rem) clamp(1rem, 4vw, 2rem);
     cursor: pointer;
     background: #ff7676;
     color: white;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
-
+    border: none;
   }
 `;
 
