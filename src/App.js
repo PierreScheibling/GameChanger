@@ -8,6 +8,13 @@ import GlobalStyles from "./components/GlobalStyles";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
+
+  window.addEventListener("resize", () => {
+    // We execute the same script as before
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  });
+
   return (
     <div className="App">
       <GlobalStyles />

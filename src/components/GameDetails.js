@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 //Redux
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { smallImage } from "../util";
+import { smallImage } from "../util.js";
 //Images
 import playstation from "../img/playstation.svg";
 import steam from "../img/steam.svg";
@@ -140,10 +140,13 @@ const CardShadow = styled(motion.div)`
 `;
 
 const GameTitle = styled(motion.div)`
-h2 {
-  margin: 0rem;
-  padding: 2rem;
-}
+display: flex;
+align-items: center;
+justify-content: center;
+width: 90%;
+  h2 {
+    margin-top: clamp(0.5rem, 5vh, 3rem)
+  }
 `;
 
 const Detail = styled(motion.div)`
@@ -151,7 +154,6 @@ const Detail = styled(motion.div)`
   z-index: 10;
   width: 90%;
   border-radius: 1rem;
-  padding: 0rem 5rem;
   background: white;
   position: absolute;
   left: 5%;
@@ -161,9 +163,6 @@ const Detail = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  img {
-    width: 100%;
-  }
 `;
 
 
@@ -172,12 +171,6 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 justify-content: center;
-img {
-  margin: 0rem 0.2rem;
-    width: 2rem;
-    height: 2rem;
-    display: inline;
-}
 `;
 
 const Stats = styled(motion.div)`
@@ -188,8 +181,9 @@ const Stats = styled(motion.div)`
   justify-content: space-between;
   width: 100%;
   img {
-    width: 2rem;
-    height: 2rem;
+    margin: clamp(0.2rem, 0.5vh, 1rem);
+    width: clamp(1rem, 3vh, 3rem);
+    height: clamp(1rem, 3vh, 3rem);
     display: inline;
   }
 `;
@@ -198,9 +192,9 @@ const Info = styled(motion.div)`
   z-index: 10;
   text-align: center;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
 `;
 
 const Platforms = styled(motion.div)`
@@ -210,9 +204,9 @@ const Platforms = styled(motion.div)`
   justify-content: space-evenly;
   align-items: flex-start;
   img {
-    margin: 0rem 0.2rem;
-    width: 2rem;
-    height: 2rem;
+    margin: clamp(0.2rem, 0.5vh, 1rem);
+    width: clamp(1rem, 3vh, 3rem);
+    height: clamp(1rem, 3vh, 3rem);
     display: inline;
   }
 `;
@@ -220,10 +214,11 @@ const Platforms = styled(motion.div)`
 const Media = styled(motion.div)`
   z-index: 10;
   margin-top: 1rem;
+  width: 90%;
   img {
     width: 100%;
-    height: 60vh;
-    object-fit: cover;
+    height: 50vh;
+    object-fit: contain;
   }
 `;
 
@@ -231,6 +226,7 @@ const Description = styled(motion.div)`
   z-index: 10;
   margin: 3rem 0rem;
   text-align: justify;
+  width: 90%;
 `;
 
 const Gallery = styled(motion.div)`
@@ -238,6 +234,7 @@ display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-gap: 1rem;
 margin-bottom: 2rem;
+width: 90%;
 img {
   width: 100%;
   height: 100%;

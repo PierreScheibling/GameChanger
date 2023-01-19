@@ -7,7 +7,12 @@ const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
 }
 
+.App{
+  height: calc(var(--vh, 1vh) * 100);
+}
+
 html {
+  font-size: 16px;
   &::-webkit-scrollbar{
     width: 0.5rem;
   }
@@ -22,26 +27,27 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 3.5vw, 6rem);
   font-family: 'Abril Fatface', cursive;
   font-weight: lighter;
   color: #333;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: clamp(1rem, 2vw, 4rem);
   font-family: 'Abril Fatface', cursive;
   font-weight: lighter;
   color: #333;
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: clamp(0.3rem, 1.3vw, 3rem);
   color: #333;
-  padding: 1.3rem 0rem;
+  padding-top: clamp(1rem, 1vw, 4rem);
+  padding-bottom: clamp(0.2rem, 0.4vw, 2rem);
 }
 p {
-  font-size: 1rem;
+  font-size: clamp(0.2rem, 1vw, 2rem);
   line-height: 200%;
   color: #696969;
 }
