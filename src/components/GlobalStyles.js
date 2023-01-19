@@ -27,28 +27,27 @@ body {
 }
 
 h1 {
-  font-size: clamp(1.5rem, 3.5vw, 6rem);
+  font-size: clamp(2rem, 3.5vw, 8rem);
   font-family: 'Abril Fatface', cursive;
   font-weight: lighter;
   color: #333;
 }
 
 h2 {
-  font-size: clamp(1rem, 2vw, 4rem);
+  font-size: clamp(1.5rem, 2vw, 6rem);
   font-family: 'Abril Fatface', cursive;
   font-weight: lighter;
   color: #333;
 }
 
 h3 {
-  font-size: clamp(0.3rem, 1.3vw, 3rem);
+  font-size: clamp(1rem, 1.3vw, 5rem);
   color: #333;
   padding-top: clamp(1rem, 1vw, 4rem);
   padding-bottom: clamp(0.2rem, 0.4vw, 2rem);
 }
 p {
-  font-size: clamp(0.2rem, 1vw, 2rem);
-  line-height: 200%;
+  font-size: clamp(1rem, 1vw, 2rem);
   color: #696969;
 }
 

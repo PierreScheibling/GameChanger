@@ -99,7 +99,7 @@ const GameList = styled(motion.div)`
 
 const Games = styled(motion.div)`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(clamp(3rem, 25vw, 30rem), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(clamp(20rem, 35vw, 30rem), 1fr));
   grid-column-gap: clamp(1rem, 2vw, 3rem);
   grid-row-gap: clamp(1rem, 2vw, 3rem);
 `;

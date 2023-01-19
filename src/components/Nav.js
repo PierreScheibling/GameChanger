@@ -43,7 +43,7 @@ const Nav = () => {
 };
 
 const StyledNav = styled(motion.nav)`
-  margin-top: clamp(1rem, 4vw, 4rem);
+  margin-top: clamp(1rem, 2vw, 4rem);
   text-align: center;
   input {
     width: 30%;
