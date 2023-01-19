@@ -51,7 +51,7 @@ const StyledNav = styled(motion.nav)`
     font-size: clamp(0.5rem, 1.5vw, 6rem);
     padding: clamp(0.5rem, 0.5vw, 1rem);
     border: none;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
   }
