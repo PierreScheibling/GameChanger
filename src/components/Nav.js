@@ -53,7 +53,10 @@ const StyledNav = styled(motion.nav)`
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
+    border: none;
+    @media (max-width: 834px) {
     border: solid 0.5px grey;
+    }
   }
   button {
     font-size: clamp(0.5rem, 1.5vw, 6rem);
